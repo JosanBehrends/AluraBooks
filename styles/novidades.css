@@ -1,0 +1,73 @@
+.novidades {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.novidades__titulo, .novidades__descrição {
+    background: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.novidades__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.novidades__descrição {
+    font-weight: 300;
+    margin: 1em 0;   
+}
+
+.cadastro__email {
+    color: var(--azul-fixo);
+    width: 75%;
+    padding: 1em;
+    border: 1px solid var(--azul-fixo);
+    border-radius: 30px;
+}
+
+.cadastro__email::placeholder {
+    background: url(../Imagem/Email.svg) no-repeat;
+    background-position: center;
+    background-position: left;
+    color: var(--azul);
+    padding-left: 2.5em;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+@media screen and (min-width: 1024px) {
+
+    .novidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10%;
+    }
+
+    .cadastro__email {
+        width: 30%;
+        position: right;
+    }
+
+    .novidades__titulo {
+        font-size: 24px;
+    }
+
+    .novidades__descrição {
+        font-size: 18px;
+    }
+
+    .novidades__flex {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .novidades {
+        padding: 3em 20vw;
+    }
+}
